@@ -1,6 +1,6 @@
 # NightShift: Custom Block Night
 
-**Source-only prototype. No playable Minecraft build has been produced or tested. Nothing has been uploaded or published.**
+**Source-only prototype. No playable Minecraft build has been produced or tested. Source is available on GitHub; no playable release has been uploaded to Melty or published.**
 
 Intended first version: a solo three-minute night in a separate Minecraft office. Watch the camera, close the left door, and cool the room while conserving power. Freddy, Chica, and Foxy's actual portraits, plus door and jumpscare audio, are read directly into memory from the player's installed Ultimate Custom Night executable. The character encounters are new mashup rules, not a port of UCN's complete behavior.
 
