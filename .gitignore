@@ -1,0 +1,7 @@
+.gradle/
+build/
+run/
+*.log
+accounts.json
+launcher_accounts*.json
+.env

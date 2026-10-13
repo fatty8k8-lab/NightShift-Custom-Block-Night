@@ -1,0 +1,1 @@
+{"schemaVersion":1,"id":"nightshift","version":"0.1.0","name":"NightShift: Custom Block Night","environment":"client","entrypoints":{"client":["nightshift.NightShift"]},"license":"AGPL-3.0-only","depends":{"fabricloader":">=0.16.14","minecraft":"1.21.5","java":">=21","fabric-api":"*"}}

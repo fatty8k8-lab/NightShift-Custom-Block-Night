@@ -1,0 +1,31 @@
+{
+ "systems":[
+  {"id":"round","durationTicks":3600,"startingPower":100,"baseDrainPerSecond":0.1,"doorDrainPerSecond":0.45,"cameraDrainPerSecond":0.2,"fanDrainPerSecond":0.15}
+ ],
+ "heatSystems":[
+  {"id":"heat","startingHeat":60,"risePerSecond":0.35,"fanCoolingPerSecond":0.9,"dangerHeat":80}
+ ],
+ "assets":[
+  {"id":"freddy","handle":77,"bank":"image","width":150,"height":200},
+  {"id":"chica","handle":79,"bank":"image","width":150,"height":200},
+  {"id":"foxy","handle":80,"bank":"image","width":150,"height":200},
+  {"id":"door","handle":8,"bank":"sound","width":0,"height":0},
+  {"id":"scream","handle":16,"bank":"sound","width":0,"height":0}
+ ],
+ "enemies":[
+  {"id":"freddy","portrait":"freddy","intervalTicks":440,"warningTicks":120,"defense":"left","rule":"Close the left door while Freddy approaches."},
+  {"id":"chica","portrait":"chica","intervalTicks":620,"warningTicks":140,"defense":"heat","rule":"Cool the office below 80 before Chica arrives."},
+  {"id":"foxy","portrait":"foxy","intervalTicks":780,"warningTicks":100,"defense":"camera","rule":"Watch Foxy on the camera during his approach."}
+ ],
+ "hooks":[
+  {"id":"tick","event":"ClientTickEvents.END_CLIENT_TICK","system":"round"},
+  {"id":"hud","event":"HudRenderCallback","system":"round"},
+  {"id":"heat-tick","event":"ClientTickEvents.END_CLIENT_TICK","system":"heat"}
+ ],
+ "controls":[
+  {"id":"start","key":78,"label":"N: start / retry"},
+  {"id":"left","key":90,"label":"Z: left door"},
+  {"id":"camera","key":67,"label":"C: camera"},
+  {"id":"fan","key":70,"label":"F: fan"}
+ ]
+}
